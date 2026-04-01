@@ -13,13 +13,9 @@ DESTINATION_URL = '/business_gallery_pics'
 UPLOAD_DIR = app.config['media'] + DESTINATION_URL
 
 
-@app.route('/delete_business_gallery_pic', methods=['DELETE'])
+@app.route('/delete_business_gallery_pic', methods=['POST'])
 def delete_business_gallery_pic():
     try:
-        # Check content type
-        content_type = request.headers.get('Content-Type', '')
-        if not content_type.startswith('application/json'):
-            return jsonify({'error': 'Invalid content type. Expected JSON.'}), 415
         
         # Get JSON body
         data = request.get_json()
