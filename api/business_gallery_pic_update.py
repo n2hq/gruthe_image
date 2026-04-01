@@ -8,6 +8,7 @@ import uuid
 import os
 from .lib import process_image_to_jpeg
 
+
 DESTINATION_DIR = '/business_gallery_pics'
 UPLOAD_DIR = app.config['media'] + DESTINATION_DIR
 

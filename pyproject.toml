@@ -1,0 +1,9 @@
+[project]
+name = "gruthe_image"
+version = "0.1.0"
+
+dependencies = [
+    "flask",
+    "gunicorn",
+    "python-dotenv"
+]

@@ -8,6 +8,8 @@ from datetime import datetime
 import uuid
 import os
 
+
+
 DESTINATION_DIR = '/business_gallery_pics'
 UPLOAD_DIR = app.config['media'] + DESTINATION_DIR
 
